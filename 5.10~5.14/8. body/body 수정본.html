@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise</title>
+    <style>
+      body {
+        background-image: url("bodybuilder3.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #section {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        z-index: -1;
+      }
+
+      .shoulder {
+        width: 300px;
+        height: 100px;
+
+        background-image: url("shoulder1.png");
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+
+        z-index: 1;
+      }
+
+      .back {
+        width: 300px;
+        height: 100px;
+        background-image: url("back1.png");
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+        z-index: 1;
+      }
+
+      .leg {
+        width: 300px;
+        height: 100px;
+        background-image: url("leg1.png");
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+        z-index: 1;
+      }
+
+      .shoulder:hover {
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+        background-image: url("shoulder2.png");
+        width: 300px;
+        height: 100px;
+        z-index: 1;
+      }
+
+      .back:hover {
+        background-image: url("back2.png");
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+        width: 300px;
+        height: 100px;
+        z-index: 1;
+      }
+      .leg:hover {
+        background-image: url("leg2.png");
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+        width: 300px;
+        height: 100px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="shoulder"></div>
+      <div class="back"></div>
+      <div class="leg"></div>
+    </div>
+  </body>
+</html>

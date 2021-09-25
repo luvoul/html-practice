@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIYEON WORLD</title>
+    <style>
+      body {
+        background-color: rgb(188, 248, 252);
+        margin: 0 auto;
+        width: 960px;
+      }
+      #section {
+        font-weight: bold;
+        font-family: "Ink Free";
+        color: rgb(96, 138, 214);
+        font-size: 20px;
+        width: 220px;
+        display: inline-block;
+      }
+      .left {
+        text-align: right;
+      }
+      .right {
+        text-align: left;
+      }
+      .text-deco {
+        text-shadow: 2px 2px 3px rgb(163, 144, 250);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <img src="World2.png" width="880px" />
+    </p>
+    <div id="section" class="left">
+      ✿(☞ﾟヮﾟ)☞&nbsp;<br />✿(☞ﾟヮﾟ)☞&nbsp;<br />✿(☞ﾟヮﾟ)☞&nbsp;<br />
+      ✿(☞ﾟヮﾟ)☞&nbsp;<br />✿(☞ﾟヮﾟ)☞&nbsp;<br />✿(☞ﾟヮﾟ)☞&nbsp;<br />
+      ✿(☞ﾟヮﾟ)☞&nbsp;<br />✿(☞ﾟヮﾟ)☞&nbsp;<br />
+    </div>
+    <div id="section">
+      <img src="Jiyeon (1).jpg" width="220px" />
+    </div>
+    <div id="section" class="right">
+      &nbsp;☜(ﾟヮﾟ☜)✿<br />&nbsp;☜(ﾟヮﾟ☜)✿<br />&nbsp;☜(ﾟヮﾟ☜)✿<br />
+      &nbsp;☜(ﾟヮﾟ☜)✿<br />&nbsp;☜(ﾟヮﾟ☜)✿<br />&nbsp;☜(ﾟヮﾟ☜)✿<br />
+      &nbsp;☜(ﾟヮﾟ☜)✿<br />&nbsp;☜(ﾟヮﾟ☜)✿<br />
+    </div>
+    <div id="section" class="text-deco">
+      <form name="fo">
+        NAME : <br /><input type="text" id="NAME" size="15" value="" /><br />
+        BIRTHDAY : <br /><input
+          type="text"
+          id="BIRTHDAY"
+          size="15"
+          value=""
+        /><br />
+        BLOODTYPE : <br /><input
+          type="text"
+          id="BLOODTYPE"
+          size="15"
+          value=""
+        /><br /><br />
+        <input type="button" value="(❁´◡`❁)" onclick="login()" />
+      </form>
+    </div>
+    <script>
+      var name = "김지연";
+      var birthday = "980403";
+      var bloodtype = "AB";
+
+      function login() {
+        var name2 = document.getElementById("NAME").value;
+        var birthday2 = document.getElementById("BIRTHDAY").value;
+        var bloodtype2 = document.getElementById("BLOODTYPE").value;
+        console.log(name2);
+        console.log(birthday2);
+        console.log(bloodtype2);
+
+        if (name == name2 && birthday == birthday2 && bloodtype == bloodtype2) {
+          window.location = "jiyeon log in.html";
+        }
+      }
+    </script>
+  </body>
+</html>

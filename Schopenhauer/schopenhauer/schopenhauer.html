@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul</title>
+    <style>
+        body{
+            background-color: rgb(116, 115, 115);
+            margin: 0 auto;
+            width: 900px;
+            font-family: "Cambria";
+        }
+        #paper {
+            font-weight: bolder; 
+            text-shadow: 3px 3px 10px rgb(92, 86, 86);
+            font-size: 110px;
+        }
+        #box { font-size: 20px;
+                text-shadow: 2px 2px 3px rgb(92, 86, 86);
+                box-shadow: 2px 2px 3px rgb(92, 86, 86);
+                width: 500px;
+                text-align: center;
+                margin-left: 100px;
+                height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="paper"> Schopenhauer </p>
+    <form id="box">
+        Familyname : <input type="text" id="Familyname" size="25" value="">
+        <input type="button" value="ಠ_ಠ" onclick="jump()">
+    </form>
+    <script>
+        var Familyname = "Arthur"
+        function jump(){
+            var Familyname2 = document.getElementById("Familyname").value;
+            if(Familyname == Familyname2){
+                window.location = "pick.html"
+            }
+        }
+    </script>
+</body>
+</html>
